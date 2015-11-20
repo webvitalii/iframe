@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
-Tested up to: 4.5
+Tested up to: 4.6
 Stable tag: 4.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -15,7 +15,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 > **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitaly)** |
 > **[iframe](http://web-profile.com.ua/wordpress/plugins/iframe/ "Plugin page")** |
 > **[All iframe params](http://wordpress.org/plugins/iframe/other_notes/)** |
-> **[Donate](http://web-profile.com.ua/donate/ "Support the development")**
+> **[Donate](http://web-profile.com.ua/donate/ "Support the development")** |
+> **[Github](https://github.com/webvitaly/iframe "Fork")**
 
 [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
 should show something like this:
