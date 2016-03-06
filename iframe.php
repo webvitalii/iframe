@@ -58,12 +58,15 @@ function iframe_unqprfx_embed_shortcode( $atts ) {
 add_shortcode( 'iframe', 'iframe_unqprfx_embed_shortcode' );
 
 
-function iframe_unqprfx_plugin_meta( $links, $file ) { // add 'Plugin page' and 'Donate' links to plugin meta row
-	if ( strpos( $file, 'iframe/iframe.php' ) !== false ) {
-		$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/wordpress/plugins/iframe/" title="Plugin page">Iframe</a>' ) );
-		$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/donate/" title="Support the development">Donate</a>' ) );
-		$links = array_merge( $links, array( '<a href="http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii">Advanced iFrame Pro</a>' ) );
+function iframe_unqprfx_plugin_meta( $links, $file ) { // add links to plugin meta row
+	if ( $file == plugin_basename( __FILE__ ) ) {
+		$row_meta = array(
+			'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/iframe/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Iframe', 'iframe' ) . '</a>',
+			'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'iframe' ) . '</a>',
+			'pro' => '<a href="http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii" target="_blank"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Advanced iFrame Pro', 'iframe' ) . '</a>'
+		);
+		$links = array_merge( $links, $row_meta );
 	}
-	return $links;
+	return (array) $links;
 }
 add_filter( 'plugin_row_meta', 'iframe_unqprfx_plugin_meta', 10, 2 );
