@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: 4.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -12,11 +12,11 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
-> **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitaly)** |
+> **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")** |
 > **[iframe](http://web-profile.com.ua/wordpress/plugins/iframe/ "Plugin page")** |
 > **[All iframe params](http://wordpress.org/plugins/iframe/other_notes/)** |
 > **[Donate](http://web-profile.com.ua/donate/ "Support the development")** |
-> **[Github](https://github.com/webvitaly/iframe "Fork")**
+> **[GitHub](https://github.com/webvitalii/iframe "Fork")**
 
 [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
 should show something like this:
@@ -32,7 +32,7 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 [embed] shortcode is a core WordPress feature and can [embed content from many resources via direct link](http://codex.wordpress.org/Embeds).
 
 = Useful: =
-* [Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitaly)
+* [Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")
 * ["Anti-spam" - block spam in comments](http://wordpress.org/plugins/anti-spam/ "no spam, no captcha")
 * ["Page-list" - show list of pages with shortcodes](http://wordpress.org/plugins/page-list/ "list of pages with shortcodes")
 
