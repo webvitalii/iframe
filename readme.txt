@@ -33,7 +33,7 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 
 = Useful: =
 * **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")**
-* **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/edit/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
+* **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
 * **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block spam in comments")**
 
 == Other Notes ==
