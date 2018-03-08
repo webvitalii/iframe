@@ -1,6 +1,6 @@
 === iframe ===
 Contributors: webvitaly
-Donate link: http://web-profile.com.ua/donate/
+Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 5.0
@@ -14,8 +14,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 > **[Speedup WordPress](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
 > **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")** |
-> **[iframe](http://web-profile.com.ua/wordpress/plugins/iframe/ "Plugin page")** |
-> **[Donate](http://web-profile.com.ua/donate/ "Support the development")** |
+> **[iframe](http://web-profile.net/wordpress/plugins/iframe/ "Plugin page")** |
+> **[Donate](http://web-profile.net/donate/ "Support the development")** |
 > **[GitHub](https://github.com/webvitalii/iframe "Fork")**
 
 [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
