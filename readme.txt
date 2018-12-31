@@ -24,13 +24,16 @@ should show something like this:
 
 
 WordPress removes iframe html tags because of security reasons.
-Iframe shortcode is the replacement of the iframe html tag and accepts the same **[params as iframe html tag](http://wordpress.org/plugins/iframe/other_notes/)** does.
+Iframe shortcode is the replacement of the iframe html tag and accepts the same params as iframe html tag does.
 You may use iframe shortcode to embed content from YouTube, Vimeo, Google Maps or from any external page.
+
 
 If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitter via direct link, you may use `[embed]http://www.youtube.com/watch?v=4qsGTXLnmKs[/embed]` shortcode.
 [embed] shortcode is a core WordPress feature and can [embed content from many resources via direct link](http://codex.wordpress.org/Embeds).
 
-== Other Notes ==
+**Important**: You can not embed HTTP pages into HTTPS pages and vice versa.
+So the protocol (http or httpS) for parent and embedded page should match.
+
 
 = iframe params: =
 * **src** - source of the iframe: `[iframe src="http://www.youtube.com/embed/4qsGTXLnmKs"]`; by default src="http://www.youtube.com/embed/4qsGTXLnmKs";
