@@ -3,13 +3,17 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
-Version: 4.3
+Version: 4.4
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
 */
 
-define('IFRAME_PLUGIN_VERSION', '4.3');
+if ( ! defined( 'ABSPATH' ) ) { // Avoid direct calls to this file and prevent full path disclosure
+	exit;
+}
+
+define('IFRAME_PLUGIN_VERSION', '4.4');
 
 function iframe_plugin_add_shortcode_cb( $atts ) {
 	$defaults = array(
@@ -62,10 +66,9 @@ add_shortcode( 'iframe', 'iframe_plugin_add_shortcode_cb' );
 function iframe_plugin_row_meta_cb( $links, $file ) {
 	if ( $file == plugin_basename( __FILE__ ) ) {
 		$row_meta = array(
-			'support' => '<a href="http://web-profile.net/wordpress/plugins/iframe/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Iframe', 'iframe' ) . '</a>',
-			'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'iframe' ) . '</a>',
-			'iframe_pro' => '<a href="http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii" target="_blank"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Advanced iFrame Pro', 'iframe' ) . '</a>',
-			'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'iframe' ) . '</a>'
+			'support' => '<a href="http://web-profile.net/wordpress/plugins/iframe/" target="_blank">' . __( 'Iframe', 'iframe' ) . '</a>',
+			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'iframe' ) . '</a>',
+			'pro' => '<a href="http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank">' . __( 'Anti-spam Pro', 'iframe' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}

@@ -4,7 +4,7 @@ Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 5.0
-Stable tag: 4.3
+Stable tag: 4.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -12,11 +12,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
-> **[Speedup WordPress](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
-> **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")** |
-> **[iframe](http://web-profile.net/wordpress/plugins/iframe/ "Plugin page")** |
-> **[Donate](http://web-profile.net/donate/ "Support the development")** |
-> **[GitHub](https://github.com/webvitalii/iframe "Fork")**
+* **[Anti-spam Pro](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block Spam in Comments")**
+* **[iframe](http://web-profile.net/wordpress/plugins/iframe/ "Plugin page")**
+* **[Donate](http://web-profile.net/donate/ "Support the development")**
+* **[GitHub](https://github.com/webvitalii/iframe "Fork")**
 
 [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
 should show something like this:
@@ -30,11 +29,6 @@ You may use iframe shortcode to embed content from YouTube, Vimeo, Google Maps o
 
 If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitter via direct link, you may use `[embed]http://www.youtube.com/watch?v=4qsGTXLnmKs[/embed]` shortcode.
 [embed] shortcode is a core WordPress feature and can [embed content from many resources via direct link](http://codex.wordpress.org/Embeds).
-
-= Useful: =
-* **[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitalii "Advanced iFrame Pro")**
-* **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
-* **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block spam in comments")**
 
 == Other Notes ==
 
@@ -60,22 +54,25 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 
 == Changelog ==
 
-= 4.3 - 2016-03-24 =
+= 4.4 =
+* minor cleanup.
+
+= 4.3 =
 * minor refactoring.
 
-= 4.2 - 2015-08-16 =
+= 4.2 =
 * minor bugfixing.
 
-= 4.1 - 2015-08-11 =
+= 4.1 =
 * removed onpageshow and onclick params. Reason: XSS vulnerability (thanks to dxw.com).
 
-= 4.0 - 2015-08-09 =
+= 4.0 =
 * removed get_params_from_url param. Reason: XSS vulnerability (thanks to dxw.com).
 If you still need this feature you can [download iframe ver 3.0[(https://wordpress.org/plugins/iframe/developers/) and stick to it but keep in mind of XSS vulnerability.
 * removed onload param. Reason: XSS vulnerability (thanks to dxw.com).
 * escaping attributes
 
-= 3.0 - 2015-01-25 =
+= 3.0 =
 * removed same_height_as="content", same_height_as="window", same_height_as="document" features because it was not working properly
 * rewrote the javascript-code using pure JavaScript and without jQuery - no need to load jQuery for every site using iframe plugin
 * removed function_exists check because each function has unique prefix
@@ -84,25 +81,25 @@ If you still need this feature you can [download iframe ver 3.0[(https://wordpre
 * set height="500" instead of 480 by default
 * set scrolling="yes" instead of "no" by default
 
-= 2.9 - 2014-05-31 =
+= 2.9 =
 * remove '&' from the end of the string in 'get_params_from_url' param
 
-= 2.8 - 2014-03-14 =
+= 2.8 =
 * remove fix for google maps
 
-= 2.7 - 2013-06-09 =
+= 2.7 =
 * minor changes
 
-= 2.6 - 2013-03-18 =
+= 2.6 =
 * minor changes
 
-= 2.5 - 2012-11-03 =
+= 2.5 =
 * added 'get_params_from_url' (thanks to Nathanael Majoros)
 
-= 2.4 - 2012-10-31 =
+= 2.4 =
 * minor changes
 
-= 2.3 - 2012.09.09 =
+= 2.3 =
 * small fixes
 * added (src="http://www.youtube.com/embed/4qsGTXLnmKs") by default
 
