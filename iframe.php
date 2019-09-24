@@ -68,7 +68,7 @@ function iframe_plugin_row_meta_cb( $links, $file ) {
 		$row_meta = array(
 			'support' => '<a href="http://web-profile.net/wordpress/plugins/iframe/" target="_blank">' . __( 'Iframe', 'iframe' ) . '</a>',
 			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'iframe' ) . '</a>',
-			'pro' => '<a href="http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank">' . __( 'Anti-spam Pro', 'iframe' ) . '</a>'
+			'pro' => '<a href="https://1.envato.market/Ym5aq" target="_blank">' . __( 'Advanced iFrame Pro', 'iframe' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}
