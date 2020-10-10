@@ -15,3 +15,9 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Avoid sending useless files when downloading tarball from github
+.gitignore export-ignore
+.gitattributes export-ignore
+readme.txt export-ignore
+screenshot-1.png export-ignore
