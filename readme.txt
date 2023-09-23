@@ -4,7 +4,7 @@ Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 6.3
-Stable tag: 4.6
+Stable tag: 4.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -56,6 +56,9 @@ So the protocol (http or httpS) for parent and embedded page should match.
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 4.7 =
+* remove all attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
 
 = 4.6 =
 * removed onmouseover and onfocus attributes

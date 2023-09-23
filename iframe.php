@@ -3,7 +3,7 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/mOOClonYKmc" width="100%" height="500"] shortcode
-Version: 4.6
+Version: 4.7
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) { // Avoid direct calls to this file and prevent f
 	exit;
 }
 
-define('IFRAME_PLUGIN_VERSION', '4.6');
+define('IFRAME_PLUGIN_VERSION', '4.7');
 
 function iframe_plugin_add_shortcode_cb( $atts ) {
 	$defaults = array(
@@ -37,9 +37,8 @@ function iframe_plugin_add_shortcode_cb( $atts ) {
 		if ( strtolower($attr) == 'src' ) { // sanitize url
 			$value = esc_url( $value );
 		}
-		if ( strtolower($attr) != 'same_height_as' AND strtolower($attr) != 'onload'
-			AND strtolower($attr) != 'onmouseover' AND strtolower($attr) != 'onfocus'
-			AND strtolower($attr) != 'onpageshow' AND strtolower($attr) != 'onclick') { // remove some attributes
+		// Remove all attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
+		if ( strpos( strtolower( $attr ), 'on' ) !== 0 ) {
 			if ( $value != '' ) { // adding all attributes
 				$html .= ' ' . esc_attr( $attr ) . '="' . esc_attr( $value ) . '"';
 			} else { // adding empty attributes
