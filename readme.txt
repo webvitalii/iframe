@@ -3,8 +3,8 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
-Tested up to: 6.3
-Stable tag: 4.8
+Tested up to: 6.4
+Stable tag: 4.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -56,6 +56,9 @@ So the protocol (http or httpS) for parent and embedded page should match.
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 4.9 =
+* sanitized srcdoc attribute more
 
 = 4.8 =
 * sanitized srcdoc attribute
