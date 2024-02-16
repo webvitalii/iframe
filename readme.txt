@@ -4,7 +4,7 @@ Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 6.4
-Stable tag: 4.9
+Stable tag: 5.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -57,17 +57,20 @@ So the protocol (http or httpS) for parent and embedded page should match.
 
 == Changelog ==
 
+= 5.0 =
+* fixed the $atts string/array error.
+
 = 4.9 =
-* sanitized srcdoc attribute more
+* sanitized srcdoc attribute more.
 
 = 4.8 =
-* sanitized srcdoc attribute
+* sanitized srcdoc attribute.
 
 = 4.7 =
-* remove all attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
+* remove all attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick.
 
 = 4.6 =
-* removed onmouseover and onfocus attributes
+* removed onmouseover and onfocus attributes.
 
 = 4.5 =
 * sanitize URL.

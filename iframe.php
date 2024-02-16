@@ -3,7 +3,7 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/dUpTjDqjQoo" width="100%" height="500"] shortcode
-Version: 4.9
+Version: 5.0
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) { // Avoid direct calls to this file and prevent f
 	exit;
 }
 
-define('IFRAME_PLUGIN_VERSION', '4.9');
+define('IFRAME_PLUGIN_VERSION', '5.0');
 
 function iframe_plugin_add_shortcode_cb( $atts ) {
 	$defaults = array(
@@ -41,6 +41,10 @@ function iframe_plugin_add_shortcode_cb( $atts ) {
         'em' => array(),
         'strong' => array()
 	);
+
+	if ( ! is_array( $atts ) ) {
+		$atts = array();
+	}
 
 	foreach ( $defaults as $default => $value ) { // add defaults
 		if ( ! @array_key_exists( $default, $atts ) ) { // mute warning with "@" when no params at all
