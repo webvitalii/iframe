@@ -29,7 +29,11 @@ function iframe_plugin_add_shortcode_cb( $atts ) {
 		$atts = array();
 	}
 
-	$atts = shortcode_atts( $defaults, $atts, 'iframe' );
+	foreach ( $defaults as $default => $value ) { // add defaults
+		if ( ! @array_key_exists( $default, $atts ) ) { // mute warning with "@" when no params at all
+			$atts[$default] = $value;
+		}
+	}
 
 	$html = "\n".'<!-- iframe plugin v.'.IFRAME_PLUGIN_VERSION.' wordpress.org/plugins/iframe/ -->'."\n";
 	$html .= '<iframe';
@@ -40,18 +44,19 @@ function iframe_plugin_add_shortcode_cb( $atts ) {
 
 		// Remove 'srcdoc' attribute
 		if ( strtolower($attr) == 'srcdoc' ) {
-			unset($atts['srcdoc']);
+			continue;
 		}
 
-		// Remove all attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
-		if ( strpos( strtolower( $attr ), 'on' ) !== 0 ) {
-			if ( $value != '' ) { // adding all attributes
-				$html .= ' ' . esc_attr( $attr ) . '="' . esc_attr( $value ) . '"';
-			} else { // adding empty attributes
-				$html .= ' ' . esc_attr( $attr );
-			}
+		// Skip attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
+		if ( strpos( strtolower( $attr ), 'on' ) === 0 ) {
+			continue;
 		}
 
+		if ($value !== '') { // adding all attributes
+			$html .= ' ' . esc_attr($attr) . '="' . esc_attr($value) . '"';
+		} else { // adding empty attributes
+			$html .= ' ' . esc_attr($attr);
+		}
 	}
 	$html .= '></iframe>'."\n";
 
@@ -85,4 +90,3 @@ function iframe_plugin_row_meta_cb( $links, $file ) {
 	return (array) $links;
 }
 add_filter( 'plugin_row_meta', 'iframe_plugin_row_meta_cb', 10, 2 );
-
