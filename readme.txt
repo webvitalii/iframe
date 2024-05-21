@@ -1,7 +1,7 @@
 === iframe ===
 Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
-Tags: iframe, embed, youtube, vimeo, google-map, google-maps
+Tags: iframe, embed, youtube, vimeo, google-maps
 Requires at least: 3.0
 Tested up to: 6.4
 Stable tag: 5.1
