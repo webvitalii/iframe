@@ -3,24 +3,23 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-maps
 Requires at least: 3.0
-Tested up to: 6.4
-Stable tag: 5.1
+Tested up to: 6.7.1
+Stable tag: 5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
-[iframe src="http://www.youtube.com/embed/dUpTjDqjQoo" width="100%" height="500"] shortcode
+[iframe src="http://www.youtube.com/embed/7_nAZQt9qu0" width="100%" height="500"] shortcode
 
 == Description ==
 
-* **[Advanced iFrame Pro](https://1.envato.market/Ym5aq "Advanced iFrame Pro")**
 * **[iframe](http://web-profile.net/wordpress/plugins/iframe/ "Plugin page")**
 * **[Donate](http://web-profile.net/donate/ "Support the development")**
 * **[GitHub](https://github.com/webvitalii/iframe "Fork")**
 
-[iframe src="http://www.youtube.com/embed/dUpTjDqjQoo" width="100%" height="500"] shortcode
+[iframe src="http://www.youtube.com/embed/7_nAZQt9qu0" width="100%" height="500"] shortcode
 should show something like this:
 
-[youtube http://www.youtube.com/watch?v=dUpTjDqjQoo]
+[youtube http://www.youtube.com/watch?v=7_nAZQt9qu0]
 
 
 WordPress removes iframe html tags because of security reasons.
@@ -28,7 +27,7 @@ Iframe shortcode is the replacement of the iframe html tag and accepts the same 
 You may use iframe shortcode to embed content from YouTube, Vimeo, Google Maps or from any external page.
 
 
-If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitter via direct link, you may use `[embed]http://www.youtube.com/watch?v=dUpTjDqjQoo[/embed]` shortcode.
+If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitter via direct link, you may use `[embed]http://www.youtube.com/watch?v=7_nAZQt9qu0[/embed]` shortcode.
 [embed] shortcode is a core WordPress feature and can [embed content from many resources via direct link](http://codex.wordpress.org/Embeds).
 
 **Important**: You can not embed HTTP pages into HTTPS pages and vice versa.
@@ -36,7 +35,7 @@ So the protocol (http or httpS) for parent and embedded page should match.
 
 
 = iframe params: =
-* **src** - source of the iframe: `[iframe src="http://www.youtube.com/embed/dUpTjDqjQoo"]`; by default src="http://www.youtube.com/embed/dUpTjDqjQoo";
+* **src** - source of the iframe: `[iframe src="http://www.youtube.com/embed/7_nAZQt9qu0"]`; by default src="http://www.youtube.com/embed/7_nAZQt9qu0";
 * **width** - width in pixels or in percents: `[iframe width="100%"]` or `[iframe width="600"]`; by default width="100%";
 * **height** - height in pixels: `[iframe height="500"]`; by default height="500";
 * **scrolling** - with or without the scrollbar: `[iframe scrolling="no"]`; by default scrolling="yes";
@@ -56,6 +55,9 @@ So the protocol (http or httpS) for parent and embedded page should match.
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 5.2 =
+* minor update
 
 = 5.1 =
 * removed srcdoc attribute completely
@@ -125,7 +127,7 @@ If you still need this feature you can [download iframe ver 3.0[(https://wordpre
 
 = 2.3 =
 * small fixes
-* added (src="http://www.youtube.com/embed/4qsGTXLnmKs") by default
+* added (src="http://www.youtube.com/embed/7_nAZQt9qu0") by default
 
 = 2.2 =
 * fixed bug (Notice: Undefined index: same_height_as)
@@ -170,4 +172,4 @@ If you still need this feature you can [download iframe ver 3.0[(https://wordpre
 == Installation ==
 
 1. install and activate the plugin on the Plugins page
-2. add shortcode `[iframe src="http://www.youtube.com/embed/dUpTjDqjQoo" width="100%" height="500"]` to page or post content
+2. add shortcode `[iframe src="http://www.youtube.com/embed/7_nAZQt9qu0" width="100%" height="500"]` to page or post content
