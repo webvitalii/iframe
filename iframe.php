@@ -3,7 +3,7 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/7_nAZQt9qu0" width="100%" height="500"] shortcode
-Version: 5.2
+Version: 6.0
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -13,16 +13,24 @@ if ( ! defined( 'ABSPATH' ) ) { // Avoid direct calls to this file and prevent f
 	exit;
 }
 
-define('IFRAME_PLUGIN_VERSION', '5.2');
+define('IFRAME_PLUGIN_VERSION', '6.0');
+
+// Load settings page functionality
+require_once( plugin_dir_path( __FILE__ ) . 'iframe-settings.php' );
+
 
 function iframe_plugin_add_shortcode_cb( $atts ) {
+	// Get plugin settings
+	$settings = iframe_plugin_get_settings();
+	
 	$defaults = array(
 		//'src' => 'http://www.youtube.com/embed/7_nAZQt9qu0',
 		'width' => '100%',
 		'height' => '500',
 		'scrolling' => 'yes',
 		'class' => 'iframe-class',
-		'frameborder' => '0'
+		'frameborder' => '0',
+		'loading' => $settings['loading'] // Global setting from settings array
 	);
 
 	if ( ! is_array( $atts ) ) {
@@ -49,6 +57,11 @@ function iframe_plugin_add_shortcode_cb( $atts ) {
 
 		// Skip attributes starting with "on". Examples: onload, onmouseover, onfocus, onpageshow, onclick
 		if ( strpos( strtolower( $attr ), 'on' ) === 0 ) {
+			continue;
+		}
+
+		// Skip loading attribute if set to 'none' (browser default)
+		if ( strtolower($attr) == 'loading' && strtolower($value) == 'none' ) {
 			continue;
 		}
 

@@ -3,8 +3,8 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-maps
 Requires at least: 3.0
-Tested up to: 6.7.1
-Stable tag: 5.2
+Tested up to: 6.8.3
+Stable tag: 6.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -12,6 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
+* **[Advanced iFrame](https://r.freemius.com/13759/8047958/ "Advanced iFrame")**
 * **[iframe](http://web-profile.net/wordpress/plugins/iframe/ "Plugin page")**
 * **[Donate](http://web-profile.net/donate/ "Support the development")**
 * **[GitHub](https://github.com/webvitalii/iframe "Fork")**
@@ -32,6 +33,7 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 
 **Important**: You can not embed HTTP pages into HTTPS pages and vice versa.
 So the protocol (http or httpS) for parent and embedded page should match.
+
 
 
 = iframe params: =
@@ -55,6 +57,9 @@ So the protocol (http or httpS) for parent and embedded page should match.
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 6.0 =
+* added settings page
 
 = 5.2 =
 * minor update
