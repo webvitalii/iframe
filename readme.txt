@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: iframe, embed, youtube, vimeo, google-maps
 Requires at least: 3.0
-Tested up to: 6.9
+Tested up to: 7.0
 Stable tag: 6.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
